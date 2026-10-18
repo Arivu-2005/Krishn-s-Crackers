@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishn's Crackers | Celebrate Every Moment! Premium Sivakasi Fireworks</title>
+  <meta name="description" content="Krishn's Crackers - India's premium destination for certified green fireworks direct from Sivakasi factory. High-altitude sky shots, kids sparklers, and mega family gift hampers.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cinematic Diwali Loading Screen -->
+  <div class="cinematic-loader" id="cinematicLoader">
+    <div class="loader-emblem">🪔</div>
+    <div class="loader-title">Krishn's <span>Crackers</span></div>
+    <div class="loader-tagline">“Celebrate Every Moment!”</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Top Festive Announcement Bar -->
+  <div class="top-announcement">
+    <span>🪔 <b>KRISHN'S GRAND FESTIVE SALE:</b> Flat 50% OFF with code <span class="badge-code">DIWALI50</span></span>
+    <span>•</span>
+    <span>🚚 FREE Express Delivery above ₹999</span>
+    <span>•</span>
+    <span>🌱 100% Certified Eco-Green Fireworks</span>
+    <span>•</span>
+    <span>🏭 Sivakasi Factory Direct Wholesale Rates</span>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">🪔</span>
+        <div class="brand-text">
+          <span class="brand-title">Krishn's <span class="highlight">Crackers</span></span>
+          <span class="brand-tagline-micro">“Celebrate Every Moment!”</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#categoriesSection" class="nav-link">Collections</a>
+        <a href="#productsSection" class="nav-link">Shop Crackers</a>
+        <a href="#offersSection" class="nav-link">Diwali Offers</a>
+        <a href="#safetySection" class="nav-link">Safety Guide</a>
+        <a href="javascript:void(0)" class="nav-link" onclick="openTrackOrderModal()">Track Order</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="headerSearchInput" placeholder="Search sparklers, sky shots, anars..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="soundToggleBtn" class="sound-toggle-btn" title="Toggle Cracker Sound Effects">
+          🔈 Sound: OFF
+        </button>
+
+        <button class="btn-cart js-open-cart" title="View Cart">
+          <span>🛒 Cart</span>
+          <span class="badge-count js-cart-count">0</span>
+        </button>
+
+        <a href="admin.html" class="btn-admin-nav" title="Open Admin Panel">
+          ⚙️ Admin
+        </a>
+
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" onclick="closeMobileMenu()">
+        <span class="logo-icon">🪔</span>
+        <div class="brand-text">
+          <span class="brand-title">Krishn's <span class="highlight">Crackers</span></span>
+          <span class="brand-tagline-micro">“Celebrate Every Moment!”</span>
+        </div>
+      </a>
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">✕</button>
+    </div>
+
+    <div class="mobile-nav-search">
+      <div class="search-input-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="mobileSearchInput" placeholder="Search crackers, sparklers..." autocomplete="off">
+      </div>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link" onclick="closeMobileMenu()"><span class="mnl-icon">🏠</span> Home</a>
+      <a href="#categoriesSection" class="mobile-nav-link" onclick="closeMobileMenu()"><span class="mnl-icon">🎆</span> Collections</a>
+      <a href="#productsSection" class="mobile-nav-link" onclick="closeMobileMenu()"><span class="mnl-icon">🛍️</span> Shop Crackers</a>
+      <a href="#offersSection" class="mobile-nav-link" onclick="closeMobileMenu()"><span class="mnl-icon">🏷️</span> Diwali Offers</a>
+      <a href="#safetySection" class="mobile-nav-link" onclick="closeMobileMenu()"><span class="mnl-icon">🛡️</span> Safety Guide</a>
+      <a href="javascript:void(0)" class="mobile-nav-link" onclick="closeMobileMenu(); openTrackOrderModal();"><span class="mnl-icon">📦</span> Track Order</a>
+      <a href="admin.html" class="mobile-nav-link"><span class="mnl-icon">⚙️</span> Admin Panel</a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/919840012345?text=Hello%20Krishn's%20Crackers!" target="_blank" class="mobile-whatsapp-btn">
+        💬 Chat on WhatsApp
+      </a>
+      <p class="mobile-nav-note">🪔 Factory Direct · 100% Safe · Fast Delivery</p>
+    </div>
+  </div>
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div class="container hero-content">
+      <div class="hero-diya-wrap">
+        <span class="hero-diya">🪔</span>
+      </div>
+
+      <div class="hero-pill">
+        ✨ Factory Direct From Sivakasi • 100% CSIR-NEERI Green Certified
+      </div>
+
+      <h1 class="hero-title">
+        Light Up Your Celebrations With <span class="gold-text">Krishn's Royal Crackers</span>
+      </h1>
+
+      <p class="hero-tagline-royal">“Celebrate Every Moment!”</p>
+
+      <p class="hero-subtitle">
+        Experience high-altitude sparkling sky shots, smokeless kid-safe sparklers, and giant family gift hampers delivered safely right to your doorstep.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#productsSection" class="btn-primary">🎆 Explore 50% OFF Catalog</a>
+        <button class="btn-secondary" onclick="filterStaticCategory('combos')">🎁 View Family Gift Boxes</button>
+        <a href="https://wa.me/919840012345?text=Hello%20Krishn's%20Crackers!%20I%20would%20like%20to%20order%20crackers." target="_blank" class="btn-whatsapp-hero">
+          💬 WhatsApp Enquiry
+        </a>
+      </div>
+
+<div class="countdown-box">
+  <span class="countdown-label">🎉 Grand Diwali Mega Sale Ends In:</span>
+  <div class="countdown-digits">
+    <div class="count-unit">
+      <div class="count-num" id="countDays">00</div>
+      <div class="count-tag">Days</div>
+    </div>
+    <div class="count-unit">
+      <div class="count-num" id="countHours">00</div>
+      <div class="count-tag">Hours</div>
+    </div>
+    <div class="count-unit">
+      <div class="count-num" id="countMins">00</div>
+      <div class="count-tag">Mins</div>
+    </div>
+    <div class="count-unit">
+      <div class="count-num" id="countSecs">00</div>
+      <div class="count-tag">Secs</div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Trust Badges Strip -->
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🏭</div>
+        <div class="trust-text"><h4>Sivakasi Direct</h4><p>Authentic wholesale prices</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🌱</div>
+        <div class="trust-text"><h4>100% Green Certified</h4><p>CSIR-NEERI approved emission</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🚚</div>
+        <div class="trust-text"><h4>Safe Express Delivery</h4><p>Shockproof hazardous packaging</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-text"><h4>Razorpay Secured</h4><p>UPI, Cards & NetBanking options</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section id="offersSection" class="container">
+    <div class="promo-dhamaka-banner">
+      <div class="promo-info">
+        <h3>🎆 DIWALI DHAMAKA SALE: FLAT 50% OFF</h3>
+        <p>Unlock flat 50% savings across our entire catalogue. Free Sivakasi direct delivery on all orders over ₹999.</p>
+      </div>
+      <div class="promo-coupon-action">
+        <div>
+          <span style="font-size:0.75rem; color:#fef3c7; display:block;">Use Coupon Code:</span>
+          <span class="promo-coupon-code">DIWALI50</span>
+        </div>
+        <button class="btn-copy-code" onclick="copyAndApplyCoupon('DIWALI50')">📋 Apply Coupon</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categoriesSection" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Shop by <span>Popular Categories</span></h2>
+          <p class="section-subtitle">Pick from high-burst aerial fireworks, soothing ground wheels, sparkling fountains, and safe kids collections</p>
+        </div>
+      </div>
+
+      <div class="categories-grid" id="categoriesGrid">
+        <div class="category-card active" onclick="filterStaticCategory('all')">
+          <span class="category-icon">🎆</span><h4 class="category-name">All Crackers</h4><span class="category-count">All Varieties</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('shots')">
+          <span class="category-icon">🚀</span><h4 class="category-name">Aerial Shots</h4><span class="category-count">Multi-Burst Cakes</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('sparklers')">
+          <span class="category-icon">✨</span><h4 class="category-name">Sparklers & Phooljhadi</h4><span class="category-count">Kid-Safe & Golden</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('pots')">
+          <span class="category-icon">🌋</span><h4 class="category-name">Flower Pots & Anars</h4><span class="category-count">Tri-Colour Fountains</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('chakkars')">
+          <span class="category-icon">🌀</span><h4 class="category-name">Ground Chakkars</h4><span class="category-count">Spinners & Whistlers</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('rockets')">
+          <span class="category-icon">🚀</span><h4 class="category-name">Rockets & Missiles</h4><span class="category-count">High-Altitude Whistlers</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('garlands')">
+          <span class="category-icon">💥</span><h4 class="category-name">Garlands & Sound</h4><span class="category-count">1000 & 5000 Wala Laris</span>
+        </div>
+        <div class="category-card" onclick="filterStaticCategory('combos')">
+          <span class="category-icon">🎁</span><h4 class="category-name">Family Gift Boxes</h4><span class="category-count">Value VIP Hampers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog -->
+  <section id="productsSection" class="section-pad" style="background: rgba(13, 18, 31, 0.45);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Grand Festive <span>Cracker Catalog</span></h2>
+          <p class="section-subtitle">Freshly stocked Sivakasi fireworks with live database pricing and instant festival discounts</p>
+        </div>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="filters-group">
+          <button class="filter-btn active" data-category="all" onclick="filterStaticCategory('all')">All Fireworks</button>
+          <button class="filter-btn" data-category="shots" onclick="filterStaticCategory('shots')">🎆 Aerial Shots</button>
+          <button class="filter-btn" data-category="sparklers" onclick="filterStaticCategory('sparklers')">✨ Sparklers</button>
+          <button class="filter-btn" data-category="pots" onclick="filterStaticCategory('pots')">🌋 Flower Pots</button>
+          <button class="filter-btn" data-category="chakkars" onclick="filterStaticCategory('chakkars')">🌀 Chakkars</button>
+          <button class="filter-btn" data-category="rockets" onclick="filterStaticCategory('rockets')">🚀 Rockets</button>
+          <button class="filter-btn" data-category="garlands" onclick="filterStaticCategory('garlands')">💥 Garlands</button>
+          <button class="filter-btn" data-category="combos" onclick="filterStaticCategory('combos')">🎁 Mega Hampers</button>
+        </div>
+
+        <div>
+          <select id="catalogSortSelect" class="sort-select" onchange="sortStaticProducts(this.value)">
+            <option value="featured">✨ Featured Best Sellers</option>
+            <option value="price-low">💰 Price: Low to High</option>
+            <option value="price-high">💎 Price: High to Low</option>
+            <option value="rating">⭐ Highest Rated</option>
+            <option value="discount">🏷️ Biggest Discount</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <div class="product-skeleton"><div style="height:220px; background:rgba(255,255,255,0.05); border-radius:8px; margin-bottom:12px;"></div><div style="height:20px; background:rgba(255,255,255,0.05); width:80%; margin-bottom:8px;"></div><div style="height:15px; background:rgba(255,255,255,0.03); width:50%;"></div></div>
+        <div class="product-skeleton"><div style="height:220px; background:rgba(255,255,255,0.05); border-radius:8px; margin-bottom:12px;"></div><div style="height:20px; background:rgba(255,255,255,0.05); width:80%; margin-bottom:8px;"></div><div style="height:15px; background:rgba(255,255,255,0.03); width:50%;"></div></div>
+        <div class="product-skeleton"><div style="height:220px; background:rgba(255,255,255,0.05); border-radius:8px; margin-bottom:12px;"></div><div style="height:20px; background:rgba(255,255,255,0.05); width:80%; margin-bottom:8px;"></div><div style="height:15px; background:rgba(255,255,255,0.03); width:50%;"></div></div>
+        <div class="product-skeleton"><div style="height:220px; background:rgba(255,255,255,0.05); border-radius:8px; margin-bottom:12px;"></div><div style="height:20px; background:rgba(255,255,255,0.05); width:80%; margin-bottom:8px;"></div><div style="height:15px; background:rgba(255,255,255,0.03); width:50%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Guide -->
+  <section id="safetySection" class="section-pad safety-section">
+    <div class="container">
+      <div class="section-header" style="justify-content:center; text-align:center;">
+        <div>
+          <h2 class="section-title">Celebrate Responsibly: <span>Diwali Safety Tips</span></h2>
+          <p class="section-subtitle">Ensure a joyful, hazard-free festival for your family, children, and pets</p>
+        </div>
+      </div>
+
+      <div class="safety-grid">
+        <div class="safety-card">
+          <div class="safety-icon">👕</div><h4>Wear Cotton Clothes</h4>
+          <p>Always wear well-fitting cotton attire and secure footwear. Avoid loose synthetic garments near fire.</p>
+        </div>
+        <div class="safety-card">
+          <div class="safety-icon">🪣</div><h4>Keep Water Buckets Handy</h4>
+          <p>Keep two buckets of water and sand nearby for emergency extinguishing and disposing burnt sparkler wires.</p>
+        </div>
+        <div class="safety-card">
+          <div class="safety-icon">📏</div><h4>Maintain Safe Distance</h4>
+          <p>Always light aerial cakes and rockets in wide open spaces and step back at least 15 meters immediately.</p>
+        </div>
+        <div class="safety-card">
+          <div class="safety-icon">🐕</div><h4>Pet Safety & Low Sound</h4>
+          <p>Protect pets by keeping them inside comfortable soundproofed rooms. Choose our certified Eco-Green low decibel fireworks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">What Our <span>Happy Customers Say</span></h2>
+          <p class="section-subtitle">Over 25,000+ satisfied families across India celebrate Diwali with Krishn's Crackers</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="reviewer-header">
+            <div class="reviewer-avatar">RK</div>
+            <div class="reviewer-info"><h5>Rajesh Khanna</h5><span>Bangalore • Verified Buyer</span></div>
+          </div>
+          <div style="color:var(--primary-gold); margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"The 120 Shots Royal Symphony Sky Shot was the highlight of our Diwali night! Delivery was super fast, packaged with utmost safety, and every single shot burst with royal colors."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="reviewer-header">
+            <div class="reviewer-avatar">SP</div>
+            <div class="reviewer-info"><h5>Sunita Patel</h5><span>Ahmedabad • Verified Buyer</span></div>
+          </div>
+          <div style="color:var(--primary-gold); margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"We ordered the Maharaja Family Gift Hamper from Krishn's Crackers. 45 varieties kept the kids and adults thoroughly entertained throughout the evening. Truly genuine Sivakasi factory direct quality!"</p>
+        </div>
+
+        <div class="review-card">
+          <div class="reviewer-header">
+            <div class="reviewer-avatar">AM</div>
+            <div class="reviewer-info"><h5>Arvind Menon</h5><span>Kochi • Verified Buyer</span></div>
+          </div>
+          <div style="color:var(--primary-gold); margin-bottom: 0.5rem;">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Extremely impressed by the CSIR-NEERI green certification. Low smoke, low noise, completely safe for children. The Razorpay test payment was seamless and hassle-free."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="logo-icon">🪔</span>
+            <div class="brand-text">
+              <span class="brand-title">Krishn's <span class="highlight">Crackers</span></span>
+              <span class="brand-tagline-micro">“Celebrate Every Moment!”</span>
+            </div>
+          </a>
+          <p style="font-style: italic; color: #fbbf24; margin-bottom: 0.5rem; font-weight: 700;">“Celebrate Every Moment!”</p>
+          <p>India's most trusted online destination for Sivakasi direct factory crackers and green fireworks. Dedicated to delivering joyful, safe, and vibrant celebrations with premium quality.</p>
+          <div style="font-size:0.82rem; color:var(--text-sub);">
+            📍 Sivakasi Factory Outlet: 45 Bypass Road, Sivakasi, Tamil Nadu 626123<br>
+            📞 Helpline: +91 98400 12345 | ✉️ support@krishnscrackers.com
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home & Offers</a></li>
+            <li><a href="#productsSection">Shop All Crackers</a></li>
+            <li><a href="#categoriesSection">Firework Varieties</a></li>
+            <li><a href="javascript:void(0)" onclick="openTrackOrderModal()">Track Consignment</a></li>
+            <li><a href="admin.html">Admin Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Cracker Collections</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="filterStaticCategory('shots')">Sky Bursting Shots</a></li>
+            <li><a href="javascript:void(0)" onclick="filterStaticCategory('sparklers')">Electric Sparklers</a></li>
+            <li><a href="javascript:void(0)" onclick="filterStaticCategory('pots')">Flower Pots & Anars</a></li>
+            <li><a href="javascript:void(0)" onclick="filterStaticCategory('chakkars')">Ground Chakkars</a></li>
+            <li><a href="javascript:void(0)" onclick="filterStaticCategory('combos')">Family Gift Boxes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Payment & Trust</h4>
+          <p>100% Secure Checkout powered by Razorpay Test Gateway. Certified Safe Doorstep Express Cargo.</p>
+          <div style="display:flex; gap:0.5rem; font-size:1.5rem; margin-top:0.75rem;">💳 🏦 📱 📦 🛡️</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Krishn's Crackers Fireworks Co. All rights reserved. “Celebrate Every Moment!”</div>
+        <div style="display:flex; gap:1.25rem;">
+          <a href="#safetySection">Safety Standards</a>
+          <a href="javascript:void(0)" onclick="openTrackOrderModal()">Track Order</a>
+          <a href="admin.html">Store Admin Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919840012345?text=Hello%20Krishn's%20Crackers!%20I%20would%20like%20to%20order%20crackers." target="_blank" class="whatsapp-float" title="Order on WhatsApp">
+    <span>💬 WhatsApp Enquiry</span>
+  </a>
+
+  <!-- Mobile Sticky Bottom Navigation -->
+  <div class="mobile-bottom-bar">
+    <a href="#hero" class="mobile-nav-item active"><span class="icon">🏠</span><span>Home</span></a>
+    <a href="#productsSection" class="mobile-nav-item"><span class="icon">🎆</span><span>Crackers</span></a>
+    <a href="javascript:void(0)" class="mobile-nav-item js-open-cart"><span class="icon">🛒</span><span>Cart (<span class="js-cart-count">0</span>)</span></a>
+    <a href="javascript:void(0)" class="mobile-nav-item" onclick="openTrackOrderModal()"><span class="icon">🚚</span><span>Track</span></a>
+    <a href="admin.html" class="mobile-nav-item"><span class="icon">⚙️</span><span>Admin</span></a>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>🛒 Shopping Cart (<span class="js-cart-count">0</span>)</h3>
+      <button class="btn-close-drawer" id="closeCartBtn">✕</button>
+    </div>
+
+    <div class="delivery-meter">
+      <div class="delivery-meter-text" id="deliveryMeterText">Add <span>₹999</span> more for FREE Delivery!</div>
+      <div class="meter-track"><div class="meter-fill" id="deliveryMeterFill" style="width: 0%;"></div></div>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList"></div>
+
+    <div class="cart-coupon-box">
+      <div class="coupon-input-group">
+        <input type="text" id="cartCouponInput" placeholder="Enter coupon (DIWALI50)">
+        <button class="btn-apply-coupon" id="applyCouponBtn" onclick="applyCouponCode()">Apply</button>
+      </div>
+      <div class="applied-coupon-pill" id="appliedCouponPill" style="display: none;"></div>
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-line"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+      <div class="cart-summary-line" style="color:#34d399;"><span>Festive Discount</span><span id="cartDiscount">-₹0</span></div>
+      <div class="cart-summary-line"><span>Delivery Charge</span><span id="cartShipping">₹99</span></div>
+      <div class="cart-summary-line total"><span>Grand Total</span><span class="price" id="cartGrandTotal">₹0</span></div>
+
+      <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:0.75rem;">
+        <button class="btn-checkout-proceed" id="checkoutProceedBtn" onclick="openCheckoutModal()">Proceed to Checkout ➔</button>
+        <button class="btn-secondary" style="border-color:#25d366; color:#25d366; justify-content:center;" onclick="checkoutViaWhatsApp()">
+          💬 Order Cart via WhatsApp
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>🛍️ Secure Checkout</h3>
+        <button class="btn-close-drawer js-modal-close" onclick="closeModal('checkoutModal')">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="checkout-stepper">
+          <div class="step-node active" id="stepNode1"><div class="step-circle">1</div><div class="step-label">Delivery Address</div></div>
+          <div class="step-node" id="stepNode2"><div class="step-circle">2</div><div class="step-label">Payment Method</div></div>
+          <div class="step-node" id="stepNode3"><div class="step-circle">3</div><div class="step-label">Review & Pay</div></div>
+        </div>
+
+        <!-- Step 1 -->
+        <div id="checkoutStep1">
+          <div class="form-grid">
+            <div class="form-group col-span-2">
+              <label>Full Name *</label>
+              <input type="text" id="custName" value="Aditya Verma" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="custPhone" value="+91 98765 43210" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="custEmail" value="aditya.verma@example.com" placeholder="name@email.com">
+            </div>
+            <div class="form-group col-span-2">
+              <label>Delivery Address *</label>
+              <textarea id="custAddress" rows="2" placeholder="House/Flat number, Street name, Landmark" required>Flat 304, Silver Oak Apartments, Outer Ring Road</textarea>
+            </div>
+            <div class="form-group">
+              <label>City *</label>
+              <input type="text" id="custCity" value="Bengaluru" required>
+            </div>
+            <div class="form-group">
+              <label>PIN Code *</label>
+              <input type="text" id="custPincode" value="560103" required>
+            </div>
+            <div class="form-group">
+              <label>State</label>
+              <input type="text" id="custState" value="Karnataka">
+            </div>
+            <div class="form-group">
+              <label>Delivery Notes</label>
+              <input type="text" id="custNotes" placeholder="Fragile package instructions">
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; text-align: right;">
+            <button class="btn-primary" onclick="goToCheckoutStep(2)">Continue to Payment ➔</button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="checkoutStep2" style="display: none;">
+          <h4 style="color:#fff; font-size:1rem; margin-bottom: 0.5rem;">Select Payment Method:</h4>
+
+          <div class="payment-methods-grid">
+            <div class="pay-card-option selected" id="optRazorpay" onclick="selectPaymentMethod('razorpay')">
+              <input type="radio" name="payMethod" value="razorpay" checked>
+              <div class="pay-icon">⚡</div>
+              <div class="pay-info">
+                <h4>Razorpay Test Gateway (Instant & Secure)</h4>
+                <p>Supports UPI (GPay, PhonePe, Paytm), Credit/Debit Cards & NetBanking</p>
+              </div>
+            </div>
+
+            <div class="pay-card-option" id="optCod" onclick="selectPaymentMethod('cod')">
+              <input type="radio" name="payMethod" value="cod">
+              <div class="pay-icon">💵</div>
+              <div class="pay-info">
+                <h4>Cash on Delivery (COD)</h4>
+                <p>Pay cash or UPI upon doorstep delivery</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="razorpay-test-box" id="razorpaySimulatorBox">
+            <div class="razorpay-badge-header">
+              <div class="razorpay-logo">
+                <span>🛡️</span> Razorpay <span style="font-size:0.75rem; background:#0284c7; color:#fff; padding:1px 6px; border-radius:3px;">TEST MODE</span>
+              </div>
+              <div class="razorpay-secured-tag">🔒 256-bit SSL Encrypted</div>
+            </div>
+
+            <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:0.75rem;">
+              Simulated payment processor active. Choose test payment channel:
+            </p>
+
+            <div class="rzp-quick-options">
+              <div class="rzp-opt-pill active">📱 UPI / QR Code</div>
+              <div class="rzp-opt-pill">💳 Test Card (Auto)</div>
+              <div class="rzp-opt-pill">🏦 NetBanking</div>
+            </div>
+
+            <label class="rzp-toggle-fail">
+              <input type="checkbox" id="rzpSimulateFailToggle">
+              <span>Simulate Bank Failure / Error Response (for testing)</span>
+            </label>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; margin-top: 1.5rem;">
+            <button class="btn-secondary" onclick="goToCheckoutStep(1)">⬅ Back to Address</button>
+            <button class="btn-primary" onclick="goToCheckoutStep(3)">Review Order ➔</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="checkoutStep3" style="display: none;">
+          <h4 style="color:#fff; font-size:1rem; margin-bottom: 0.75rem;">Order Confirmation Summary:</h4>
+
+          <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:1rem; margin-bottom:1rem;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.4rem; font-size:0.88rem;">
+              <span style="color:var(--text-muted);">Total Amount Payable:</span>
+              <span style="color:var(--primary-gold-light); font-weight:800; font-size:1.2rem;" id="checkoutTotalDisplay">₹0</span>
+            </div>
+            <div style="font-size:0.8rem; color:var(--text-sub);">
+              Delivery to: <b id="reviewCustName">-</b>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; margin-top: 1.5rem;">
+            <button class="btn-secondary" onclick="goToCheckoutStep(2)">⬅ Back to Method</button>
+            <button class="btn-primary" id="btnSubmitPayment" onclick="processPaymentAndOrder()">🎆 Complete Payment Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Success Modal -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal-card" style="max-width: 540px;">
+      <div class="modal-body success-card">
+        <div class="success-icon-burst">✓</div>
+        <h2 style="color:#fff; font-size:1.5rem; font-weight:800; margin-bottom:0.4rem;">Celebration Ordered Successfully!</h2>
+        <p style="color:var(--text-sub); font-size:0.88rem;">
+          Your order has been confirmed with Krishn's factory dispatch. Happy Diwali! 🪔
+        </p>
+
+        <div id="successOrderDetails"></div>
+
+        <div style="display:flex; gap:0.75rem; justify-content:center; margin-top:1rem;">
+          <button class="btn-secondary" onclick="window.print()">🖨️ Print / Save Invoice</button>
+          <button class="btn-primary" onclick="closeModal('orderSuccessModal')">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Track Order Modal -->
+  <div class="modal-overlay" id="trackOrderModal">
+    <div class="modal-card" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3>🚚 Track Your Cracker Consignment</h3>
+        <button class="btn-close-drawer js-modal-close" onclick="closeModal('trackOrderModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="display:flex; gap:0.5rem; margin-bottom:1rem;">
+          <input type="text" id="trackOrderInput" placeholder="Enter Order ID (e.g. ORD-2026-8841)" style="flex:1; background:rgba(255,255,255,0.06); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:0.6rem 0.85rem; color:#fff;">
+          <button class="btn-primary" onclick="trackStaticOrder()">Track</button>
+        </div>
+        <div id="trackOrderResults">
+          <p style="font-size:0.82rem; color:var(--text-muted); text-align:center;">
+            Enter your order reference above to view factory packing, courier shipment, and delivery timeline.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-card" style="max-width: 760px;">
+      <div class="modal-header">
+        <h3>🎆 Cracker Details & Safety Specifications</h3>
+        <button class="btn-close-drawer js-modal-close" onclick="closeModal('quickViewModal')">✕</button>
+      </div>
+      <div class="modal-body" id="quickViewContent"></div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="js/fireworks.js"></script>
+  <script>
+    const API_BASE = window.location.origin.includes('http') ? window.location.origin : 'http://localhost:3000';
+    const PLACEHOLDER_IMG = './images/royal-symphony-120-shots.png';
+    const FREE_SHIPPING = 999;
+    // Sale end date (Diwali 2026). Change if needed.
+    const SALE_END = new Date('2026-11-08T00:00:00+05:30');
+
+    let cart = JSON.parse(localStorage.getItem('krishns_cart') || '[]');
+    let activeCoupon = JSON.parse(localStorage.getItem('krishns_applied_coupon') || 'null');
+    let checkoutStep = 1;
+    let selectedPayment = 'razorpay';
+    let dynamicProducts = [];
+    let currentFilterCategory = 'all';
+
+    // Escape text before putting it into HTML
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    // Compact fallback inventory (used only when the server is offline)
+    const IMG = './images/';
+    const UNS = (c) => `https://images.unsplash.com/${c}?auto=format&fit=crop&w=800&q=80`;
+    const F = (id, name, category, price, originalPrice, image, rating, reviewsCount, stock, soundLevel, ecoFriendly, packSize, featured, description, safetyInstructions) => ({
+      id, name, category, price, originalPrice,
+      discount: Math.round((1 - price / originalPrice) * 100) + '% OFF',
+      image, rating, reviewsCount, stock, soundLevel, ecoFriendly, packSize, featured, description, safetyInstructions
+    });
+
+    const FALLBACK_PRODUCTS = [
+      F('CRK-101', '120 Shots Royal Symphony Sky Shot', 'shots', 1899, 3799, IMG + 'royal-symphony-120-shots.png', 4.9, 312, 45, 'Medium Sound', true, '1 Box (120 Shots)', true,
+        'Breathtaking 120 continuous aerial multi-color shots in red, emerald green, gold and silver with thunderous finale bursts.', 'Place on flat ground outdoors. Maintain a minimum distance of 15 meters.'),
+      F('CRK-102', '50cm Golden Electric Sparklers', 'sparklers', 249, 499, IMG + '50cm-golden-electric-sparklers.png', 4.8, 420, 120, 'Zero Sound', true, '10 Pcs / Pack', true,
+        'Long-lasting 50cm eco-friendly golden sparklers with low smoke, burning over 3 minutes each.', "Hold at arm's length. Immerse burnt wire in a water bucket immediately."),
+      F('CRK-103', 'Special Tri-Colour Giant Anar (Flower Pots)', 'pots', 399, 799, IMG + 'special-tri-colour-anar.png', 4.9, 185, 65, 'Low Crackle', true, '5 Giant Pcs / Box', true,
+        'Majestic fountain over 20 feet high, from saffron to white to emerald green with crackling gold pearls.', 'Keep on even ground outdoors. Light with agarbatti and step back 5 meters.'),
+      F('CRK-104', 'Deluxe Special Whistling Ground Chakkars', 'chakkars', 299, 599, IMG + 'deluxe-whistling-chakkars.png', 4.7, 142, 80, 'Musical Whistle', true, '10 Pcs / Box', false,
+        'High-speed spinning ground wheels with silver and red sparks and an exciting whistle.', 'Place flat on smooth ground. Do not touch while spinning.'),
+      F('CRK-105', '1000 Wala Sivakasi Red Giant Garland', 'garlands', 699, 1399, IMG + '1000-wala-red-giant-garland.png', 4.8, 278, 50, 'High Decibel', false, '1 Roll (1000 Crackers)', true,
+        'Authentic Sivakasi lari with 1,000 continuous red crackers ending in a grand twin atom blast.', 'Unroll completely in a wide open area. Light fuse from end and move 10 meters away.'),
+      F('CRK-106', 'Maharaja Royal Family Mega Gift Hamper (45 Items)', 'combos', 2999, 6500, IMG + 'maharaja-royal-family-hamper.png', 5.0, 512, 30, 'Assorted VIP', true, '45 Premium Varieties Box', true,
+        'The ultimate festival centerpiece with 45 varieties: sky shots, sparklers, anars, chakkars, rockets and more.', 'Store in a cool dry place away from children. Read individual item instructions.'),
+      F('CRK-107', '30 Shots Golden Waterfall Palm Sky Shot', 'shots', 999, 1999, IMG + '30-shots-golden-waterfall.png', 4.8, 96, 35, 'Medium Sound', true, '1 Box (30 Shots)', false,
+        '30 high-altitude shots blooming into weeping golden willow palms with silver tips.', 'Outdoor aerial firework only. Secure the cake with bricks on the sides before lighting.'),
+      F('CRK-108', 'Eco-Green Crackers Kids Special Combo (15 Items)', 'combos', 899, 1800, IMG + 'eco-green-kids-combo.png', 4.9, 215, 65, 'Zero Sound', true, '15 Safe Items Box', true,
+        '100% CSIR-NEERI certified green crackers designed for young children.', 'Approved green crackers. Adult supervision always recommended.'),
+      F('CRK-109', 'Whistling Moon Rockets (Pack of 10)', 'rockets', 450, 900, UNS('photo-1516450360452-9312f5e86fc7'), 4.7, 130, 45, 'High Whistle & Bang', false, '10 Pcs / Box', false,
+        'High-thrust rockets soaring over 60 feet with a shrill whistle before a red chrysanthemum burst.', 'Always use a steady launch tube or empty glass bottle placed firmly on the ground.'),
+      F('CRK-110', 'Ashoka Giant Flower Pot Fountains', 'pots', 320, 640, UNS('photo-1517457373958-b7bdd4587205'), 4.7, 88, 70, 'Low Crackle', true, '10 Pcs / Box', false,
+        'Traditional Ashoka flower pots with a wide shower of golden stars and gentle crackles.', 'Place firmly on flat ground. Do not bend over while igniting.'),
+      F('CRK-111', 'Kids Magic Pencil Sparklers (Multi-Colour)', 'sparklers', 180, 360, UNS('photo-1543258103-a62bdc069871'), 4.9, 210, 150, 'Zero Sound', true, '15 Pcs / Box', false,
+        'Child-friendly low-heat sparklers that shift from ruby red to green, violet and yellow.', 'Safe for children above 5 under adult supervision. Keep a water bucket handy.'),
+      F('CRK-112', 'Hydro Bombs & Electric Sound Crackers', 'garlands', 240, 480, UNS('photo-1533618561606-3b2a0766d159'), 4.7, 115, 90, 'High Decibel', false, '10 Pcs / Box', false,
+        'Intense sound crackers for crisp, thunderous sound waves.', 'Never hold in hand after lighting. Use a long agarbatti to ignite.'),
+      F('CRK-113', 'Rotating Helicopter & Butterfly Crackers', 'chakkars', 349, 699, UNS('photo-1510525009512-ad7fc0c02b28'), 4.6, 75, 60, 'Low Buzzing', true, '10 Pcs / Box', false,
+        'Novelty crackers that spin on the ground then take flight like a glowing helicopter.', 'Clear a 5-meter radius on terrace or open ground before lighting.'),
+      F('CRK-114', 'Color Smoke Grenades & Daytime Party Fountains', 'pots', 450, 900, UNS('photo-1527525443983-6e60c75fff46'), 4.9, 92, 40, 'Zero Sound', true, '5 Tubes (5 Colors)', false,
+        'Dense vibrant color clouds in cyan, orange, magenta, yellow and lime green for daytime celebrations.', 'Outdoor use only. Do not inhale smoke directly.'),
+      F('CRK-115', '5000 Wala Sivakasi Grand Jubilee Lari', 'garlands', 1999, 4200, UNS('photo-1514565131-fce0801e5785'), 4.9, 164, 25, 'High Decibel', false, '1 Giant Roll (5000 Crackers)', false,
+        'Massive garland with over 8 minutes of non-stop cracking, ending with heavy thunder shells.', 'Use in an open field only. Keep away from flammable materials and parked vehicles.'),
+      F('CRK-116', 'Diwali Dhamaka Deluxe Family Box (25 Items)', 'combos', 1599, 3499, IMG + 'royal-symphony-120-shots.png', 4.8, 340, 55, 'Assorted Family Friendly', true, '25 Items Box', true,
+        'Best-selling mid-size family package with 25 hand-picked sparklers, anars, chakkars, rockets and pencil crackers.', 'Read instructions on individual items inside the box.')
+    ];
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Promptly dismiss loader for buttery smooth, instant page load
+      setTimeout(() => {
+        const loader = document.getElementById('cinematicLoader');
+        if (loader) loader.classList.add('fade-out');
+      }, 200);
+
+      if (window.FireworksEngine && !window.fireworks) {
+        window.fireworks = new FireworksEngine('fireworksCanvas');
+      }
+
+      await syncCatalogFromBackend();
+      updateCartDisplay();
+      setupHeaderSearch();
+      setupCountdown();
+
+      const soundBtn = document.getElementById('soundToggleBtn');
+      if (soundBtn) {
+        soundBtn.addEventListener('click', () => {
+          if (window.fireworks) {
+            const isMuted = !window.fireworks.toggleSound();
+            soundBtn.classList.toggle('active', !isMuted);
+            soundBtn.innerHTML = !isMuted ? '🔊 Sound: ON' : '🔈 Sound: OFF';
+            showToast(!isMuted ? 'Cracker Sound FX Activated!' : 'Sound muted', 'info');
+          }
+        });
+      }
+
+      document.querySelectorAll('.js-open-cart').forEach(btn => btn.addEventListener('click', () => openCartDrawer()));
+      document.getElementById('closeCartBtn')?.addEventListener('click', () => closeCartDrawer());
+      document.getElementById('cartDrawerOverlay')?.addEventListener('click', () => closeCartDrawer());
+    });
+
+    // ==========================================
+    // Catalog from backend
+    // ==========================================
+    async function syncCatalogFromBackend() {
+      try {
+        const res = await fetch(`${API_BASE}/api/products`);
+        const json = await res.json();
+        dynamicProducts = (json.success && json.data && json.data.length) ? json.data : FALLBACK_PRODUCTS;
+      } catch (e) {
+        console.warn('Backend API offline, showing fallback inventory:', e);
+        dynamicProducts = FALLBACK_PRODUCTS;
+      }
+      renderProductCards(dynamicProducts);
+    }
+
+    function renderProductCards(list) {
+      const container = document.getElementById('productsGrid');
+      if (!container) return;
+
+      if (!list || list.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎆</div>
+            <h3 style="color:#fff; margin-bottom: 0.5rem;">No Fireworks Found</h3>
+            <p>Try searching for a different cracker name or selecting another category.</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = list.map(p => {
+        const isOutOfStock = p.stock <= 0;
+        const savings = (p.originalPrice && p.originalPrice > p.price) ? p.originalPrice - p.price : 0;
+        const img = esc(p.image || PLACEHOLDER_IMG);
+        const name = esc(p.name);
+
+        return `
+          <div class="product-card" data-category="${esc(p.category)}" data-price="${p.price}" data-name="${name}" data-rating="${p.rating || 4.8}">
+            <div class="product-thumb-wrap">
+              <img src="${img}" alt="${name}" class="product-thumb" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMG}'">
+              ${p.discount ? `<span class="badge-discount">${esc(p.discount)}</span>` : ''}
+              ${p.ecoFriendly ? `<span class="badge-tag badge-eco">🌱 Green Cracker</span>` : ''}
+              ${p.soundLevel ? `<span class="badge-sound">${esc(p.soundLevel)}</span>` : ''}
+              <button class="quick-view-hover-btn" onclick="openProductQuickView('${esc(p.id)}')">👁️ Quick Look</button>
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <span>⭐ ${p.rating || 4.9}</span>
+                <span class="count">(${p.reviewsCount || 100} reviews)</span>
+              </div>
+              <h3 class="product-title" title="${name}">${name}</h3>
+              <div class="product-pack-size">📦 ${esc(p.packSize || '1 Standard Pack')}</div>
+              <div class="product-pricing">
+                <span class="current-price">₹${p.price.toLocaleString('en-IN')}</span>
+                ${p.originalPrice ? `<span class="old-price">₹${p.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+                ${savings > 0 ? `<span class="savings-tag">Save ₹${savings.toLocaleString('en-IN')}</span>` : ''}
+              </div>
+              <div class="product-stock-pill ${isOutOfStock ? 'out-stock' : 'in-stock'}">
+                ${isOutOfStock ? 'Out of Stock' : `In Stock (${p.stock} left)`}
+              </div>
+              <button class="btn-add-cart ${isOutOfStock ? 'out-of-stock' : ''}" ${isOutOfStock ? 'disabled' : ''} onclick="addItemToCartById('${esc(p.id)}')">
+                ${isOutOfStock ? '⚠️ Out of Stock' : '🛒 Add to Cart'}
+              </button>
+            </div>
+          </div>`;
+      }).join('');
+
+      // Reveal cards (scroll-reveal observer is set once; new cards just show)
+      container.querySelectorAll('.product-card').forEach(el => el.classList.add('revealed'));
+    }
+
+    // ==========================================
+    // Filter & search
+    // ==========================================
+    function filterStaticCategory(category) {
+      currentFilterCategory = category;
+
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.category === category));
+      document.querySelectorAll('.category-card').forEach(c => {
+        const fn = c.getAttribute('onclick') || '';
+        c.classList.toggle('active', fn.includes(`'${category}'`));
+      });
+
+      applyCurrentFilters();
+
+      const prodSection = document.getElementById('productsSection');
+      if (prodSection && category !== 'all') prodSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function applyCurrentFilters() {
+      const query = (document.getElementById('headerSearchInput')?.value || '').toLowerCase().trim();
+      const sortBy = document.getElementById('catalogSortSelect')?.value || 'featured';
+
+      let filtered = [...dynamicProducts];
+
+      if (currentFilterCategory !== 'all') {
+        filtered = filtered.filter(p => {
+          if (currentFilterCategory === 'garlands') return p.category === 'garlands' || p.category === 'sound';
+          if (currentFilterCategory === 'combos') return p.category === 'combos' || p.category === 'hampers';
+          return p.category === currentFilterCategory;
+        });
+      }
+
+      if (query) {
+        filtered = filtered.filter(p =>
+          p.name.toLowerCase().includes(query) ||
+          (p.description && p.description.toLowerCase().includes(query)) ||
+          (p.soundLevel && p.soundLevel.toLowerCase().includes(query))
+        );
+      }
+
+      if (sortBy === 'price-low') filtered.sort((a, b) => a.price - b.price);
+      else if (sortBy === 'price-high') filtered.sort((a, b) => b.price - a.price);
+      else if (sortBy === 'rating') filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+      else if (sortBy === 'discount') filtered.sort((a, b) => (parseInt(b.discount) || 0) - (parseInt(a.discount) || 0));
+      else if (sortBy === 'featured') filtered.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+
+      renderProductCards(filtered);
+    }
+
+    function setupHeaderSearch() {
+      document.getElementById('headerSearchInput')?.addEventListener('input', applyCurrentFilters);
+    }
+
+    function sortStaticProducts() {
+      applyCurrentFilters();
+    }
+
+    function copyAndApplyCoupon(code) {
+      if (code === 'DIWALI50') activeCoupon = { code: 'DIWALI50', discountPercent: 50, minOrder: 999 };
+      else if (code === 'FESTIVE20') activeCoupon = { code: 'FESTIVE20', discountPercent: 20, minOrder: 499 };
+      else return;
+
+      localStorage.setItem('krishns_applied_coupon', JSON.stringify(activeCoupon));
+      updateCartDisplay();
+      showToast(`🎉 Coupon ${code} (${activeCoupon.discountPercent}% OFF) Applied!`, 'success');
+      if (window.fireworks) window.fireworks.playBangSound();
+      openCartDrawer();
+    }
+
+    // ==========================================
+    // Cart
+    // ==========================================
+    // One place that calculates all totals
+    function calcTotals() {
+      const subtotal = cart.reduce((s, i) => s + i.total, 0);
+      const discount = (activeCoupon && subtotal >= (activeCoupon.minOrder || 0))
+        ? Math.round((subtotal * activeCoupon.discountPercent) / 100) : 0;
+      const shipping = (subtotal === 0 || subtotal >= FREE_SHIPPING) ? 0 : 99;
+      return { subtotal, discount, shipping, total: Math.max(0, subtotal - discount + shipping) };
+    }
+
+    function addItemToCartById(id) {
+      const p = dynamicProducts.find(x => x.id === id);
+      if (!p) return;
+
+      const inCart = cart.find(i => i.productId === id)?.quantity || 0;
+      if (inCart >= p.stock) {
+        showToast(`Only ${p.stock} in stock`, 'error');
+        return;
+      }
+      addItemToCart(p.id, p.name, p.price, p.image || PLACEHOLDER_IMG);
+    }
+
+    function addItemToCart(id, name, price, image) {
+      const existing = cart.find(i => i.productId === id);
+      if (existing) {
+        existing.quantity += 1;
+        existing.total = existing.quantity * existing.price;
+      } else {
+        cart.push({ productId: id, name, price, quantity: 1, image, total: price });
+      }
+
+      saveCart();
+      updateCartDisplay();
+      showToast(`Added ${name} to cart!`, 'success');
+      if (window.fireworks) window.fireworks.playSparkleSound();
+    }
+
+    function updateCartQty(id, delta) {
+      const idx = cart.findIndex(i => i.productId === id);
+      if (idx < 0) return;
+
+      if (delta > 0) {
+        const p = dynamicProducts.find(x => x.id === id);
+        if (p && cart[idx].quantity >= p.stock) {
+          showToast(`Only ${p.stock} in stock`, 'error');
+          return;
+        }
+      }
+
+      cart[idx].quantity += delta;
+      if (cart[idx].quantity <= 0) cart.splice(idx, 1);
+      else cart[idx].total = cart[idx].quantity * cart[idx].price;
+
+      saveCart();
+      updateCartDisplay();
+    }
+
+    function removeCartItem(id) {
+      cart = cart.filter(i => i.productId !== id);
+      saveCart();
+      updateCartDisplay();
+      showToast('Item removed from cart', 'info');
+    }
+
+    function saveCart() {
+      localStorage.setItem('krishns_cart', JSON.stringify(cart));
+    }
+
+    function updateCartDisplay() {
+      const totalCount = cart.reduce((sum, i) => sum + i.quantity, 0);
+      document.querySelectorAll('.js-cart-count').forEach(el => el.textContent = totalCount);
+
+      const listContainer = document.getElementById('cartItemsList');
+      if (!listContainer) return;
+
+      const { subtotal, discount, shipping, total } = calcTotals();
+
+      const meterFill = document.getElementById('deliveryMeterFill');
+      const meterText = document.getElementById('deliveryMeterText');
+      if (meterFill && meterText) {
+        if (subtotal >= FREE_SHIPPING) {
+          meterFill.style.width = '100%';
+          meterText.innerHTML = `🎉 <span>FREE Express Festive Delivery</span> Unlocked!`;
+        } else {
+          const remaining = FREE_SHIPPING - subtotal;
+          meterFill.style.width = `${Math.min(100, Math.round((subtotal / FREE_SHIPPING) * 100))}%`;
+          meterText.innerHTML = `Add <span>₹${remaining.toLocaleString('en-IN')}</span> more for FREE Delivery!`;
+        }
+      }
+
+      const checkoutBtn = document.getElementById('checkoutProceedBtn');
+
+      if (cart.length === 0) {
+        listContainer.innerHTML = `
+          <div class="cart-empty-view">
+            <div class="empty-icon">🪔</div>
+            <h4 style="color:#fff; margin-bottom: 0.5rem; font-family:var(--font-display);">Your Cart is Empty</h4>
+            <p style="font-size:0.85rem;">Add sky shots, glittering sparklers, and gift boxes to spark up your festival celebrations!</p>
+          </div>`;
+        if (checkoutBtn) checkoutBtn.disabled = true;
+      } else {
+        listContainer.innerHTML = cart.map(item => `
+          <div class="cart-item">
+            <img src="${esc(item.image || PLACEHOLDER_IMG)}" alt="${esc(item.name)}" class="cart-item-img" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMG}'">
+            <div class="cart-item-details">
+              <h4 class="cart-item-title">${esc(item.name)}</h4>
+              <div class="cart-item-price">₹${item.price.toLocaleString('en-IN')}</div>
+              <div class="cart-item-controls">
+                <div class="qty-stepper">
+                  <button onclick="updateCartQty('${esc(item.productId)}', -1)">-</button>
+                  <span class="qty-val">${item.quantity}</span>
+                  <button onclick="updateCartQty('${esc(item.productId)}', 1)">+</button>
+                </div>
+                <button class="btn-remove-item" onclick="removeCartItem('${esc(item.productId)}')">Remove</button>
+              </div>
+            </div>
+          </div>`).join('');
+        if (checkoutBtn) checkoutBtn.disabled = false;
+      }
+
+      document.getElementById('cartSubtotal').textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+      document.getElementById('cartDiscount').textContent = `-₹${discount.toLocaleString('en-IN')}`;
+      document.getElementById('cartShipping').textContent = shipping === 0 ? 'FREE' : `₹${shipping}`;
+      document.getElementById('cartGrandTotal').textContent = `₹${total.toLocaleString('en-IN')}`;
+
+      const pill = document.getElementById('appliedCouponPill');
+      if (pill) {
+        if (activeCoupon) {
+          const needMore = subtotal < (activeCoupon.minOrder || 0);
+          pill.style.display = 'flex';
+          pill.innerHTML = `
+            <span>🏷️ <b>${esc(activeCoupon.code)}</b> ${needMore ? `(add ₹${(activeCoupon.minOrder - subtotal).toLocaleString('en-IN')} more to use)` : `(${activeCoupon.discountPercent}% Off applied)`}</span>
+            <button onclick="removeCouponCode()" style="color:#ef4444; font-weight:bold; cursor:pointer;">✕</button>`;
+        } else {
+          pill.style.display = 'none';
+        }
+      }
+    }
+
+    function openCartDrawer() {
+      document.getElementById('cartDrawerOverlay')?.classList.add('active');
+      document.getElementById('cartDrawer')?.classList.add('active');
+    }
+
+    function closeCartDrawer() {
+      document.getElementById('cartDrawerOverlay')?.classList.remove('active');
+      document.getElementById('cartDrawer')?.classList.remove('active');
+    }
+
+    function applyCouponCode() {
+      const input = document.getElementById('cartCouponInput');
+      const code = (input?.value || '').trim().toUpperCase();
+
+      if (!code) { showToast('Please enter a coupon code', 'info'); return; }
+
+      if (code === 'DIWALI50') activeCoupon = { code: 'DIWALI50', discountPercent: 50, minOrder: 999 };
+      else if (code === 'FESTIVE20') activeCoupon = { code: 'FESTIVE20', discountPercent: 20, minOrder: 499 };
+      else { showToast('Invalid coupon. Try DIWALI50 or FESTIVE20', 'error'); return; }
+
+      localStorage.setItem('krishns_applied_coupon', JSON.stringify(activeCoupon));
+      input.value = '';
+      updateCartDisplay();
+      showToast(`🎉 Coupon ${code} applied successfully!`, 'success');
+      if (window.fireworks) window.fireworks.playBangSound();
+    }
+
+    function removeCouponCode() {
+      activeCoupon = null;
+      localStorage.removeItem('krishns_applied_coupon');
+      updateCartDisplay();
+      showToast('Coupon removed', 'info');
+    }
+
+    function checkoutViaWhatsApp() {
+      if (cart.length === 0) { showToast('Your cart is empty', 'error'); return; }
+      const { subtotal, discount, shipping, total } = calcTotals();
+
+      let text = `🎆 *New Order Enquiry - Krishn's Crackers* 🪔\n\n`;
+      cart.forEach((item, idx) => {
+        text += `${idx + 1}. ${item.name} × ${item.quantity} = ₹${item.total}\n`;
+      });
+      text += `\n*Subtotal:* ₹${subtotal}`;
+      if (discount > 0) text += `\n*Discount (${activeCoupon.code}):* -₹${discount}`;
+      text += `\n*Delivery:* ${shipping === 0 ? 'FREE' : '₹' + shipping}`;
+      text += `\n*Total Payable:* ₹${total}\n\nPlease confirm availability and payment details.`;
+
+      window.open(`https://wa.me/919840012345?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // ==========================================
+    // Checkout
+    // ==========================================
+    function openCheckoutModal() {
+      if (cart.length === 0) { showToast('Your cart is empty', 'error'); return; }
+      closeCartDrawer();
+      checkoutStep = 1;
+      updateCheckoutViews();
+      document.getElementById('checkoutModal')?.classList.add('active');
+    }
+
+    function updateCheckoutViews() {
+      document.getElementById('checkoutStep1').style.display = checkoutStep === 1 ? 'block' : 'none';
+      document.getElementById('checkoutStep2').style.display = checkoutStep === 2 ? 'block' : 'none';
+      document.getElementById('checkoutStep3').style.display = checkoutStep === 3 ? 'block' : 'none';
+
+      document.getElementById('stepNode1').className = `step-node ${checkoutStep === 1 ? 'active' : 'completed'}`;
+      document.getElementById('stepNode2').className = `step-node ${checkoutStep === 2 ? 'active' : (checkoutStep > 2 ? 'completed' : '')}`;
+      document.getElementById('stepNode3').className = `step-node ${checkoutStep === 3 ? 'active' : ''}`;
+
+      document.getElementById('checkoutTotalDisplay').textContent = `₹${calcTotals().total.toLocaleString('en-IN')}`;
+
+      const n = document.getElementById('custName')?.value || '';
+      const c = document.getElementById('custCity')?.value || '';
+      document.getElementById('reviewCustName').textContent = `${n} (${c})`;
+    }
+
+    function goToCheckoutStep(step) {
+      if (step >= 2) {
+        const name = document.getElementById('custName')?.value.trim();
+        const phone = document.getElementById('custPhone')?.value.trim();
+        const address = document.getElementById('custAddress')?.value.trim();
+        const city = document.getElementById('custCity')?.value.trim();
+        const pincode = document.getElementById('custPincode')?.value.trim();
+        if (!name || !phone || !address || !city || !pincode) {
+          showToast('Please fill all required delivery details.', 'error');
+          return;
+        }
+      }
+      checkoutStep = step;
+      updateCheckoutViews();
+    }
+
+    function selectPaymentMethod(method) {
+      selectedPayment = method;
+      document.getElementById('optRazorpay')?.classList.toggle('selected', method === 'razorpay');
+      document.getElementById('optCod')?.classList.toggle('selected', method === 'cod');
+      const radios = document.querySelectorAll('input[name="payMethod"]');
+      radios.forEach(r => r.checked = r.value === method);
+      document.getElementById('razorpaySimulatorBox').style.display = method === 'razorpay' ? 'block' : 'none';
+    }
+
+    async function processPaymentAndOrder() {
+      const payBtn = document.getElementById('btnSubmitPayment');
+      const originalText = payBtn.innerHTML;
+      payBtn.disabled = true;
+      payBtn.innerHTML = '<span>⏳ Processing Payment...</span>';
+
+      const shouldFail = document.getElementById('rzpSimulateFailToggle')?.checked;
+      const { subtotal, discount, shipping, total } = calcTotals();
+
+      const customer = {
+        name: document.getElementById('custName')?.value || 'Valued Customer',
+        phone: document.getElementById('custPhone')?.value || '+91 98765 00000',
+        email: document.getElementById('custEmail')?.value || 'customer@festive.com',
+        address: document.getElementById('custAddress')?.value || 'Main Road',
+        city: document.getElementById('custCity')?.value || 'Bengaluru',
+        pincode: document.getElementById('custPincode')?.value || '560001',
+        state: document.getElementById('custState')?.value || 'Karnataka'
+      };
+
+      try {
+        let payment;
+        if (selectedPayment === 'razorpay') {
+          if (shouldFail) {
+            showToast('❌ Payment Failed: Bank simulator declined transaction.', 'error');
+            return;
+          }
+
+          // Initiate verified order on backend Razorpay API
+          try {
+            const rzpInit = await fetch(`${API_BASE}/api/payment/create-order`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ amount: total, currency: 'INR' })
+            });
+            const rzpInitData = await rzpInit.json();
+            const rzpOrderId = rzpInitData.data?.orderId || ('order_' + Math.floor(1000000 + Math.random() * 9000000));
+            const rzpPaymentId = 'pay_rzp_test_' + Math.floor(10000000 + Math.random() * 90000000);
+
+            // Verify payment on backend
+            await fetch(`${API_BASE}/api/payment/verify-payment`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                razorpay_order_id: rzpOrderId,
+                razorpay_payment_id: rzpPaymentId,
+                razorpay_signature: 'test_sig_verified',
+                amount: total
+              })
+            });
+
+            payment = {
+              method: 'Razorpay Test Mode',
+              transactionId: rzpPaymentId,
+              status: 'Paid',
+              razorpayOrderId: rzpOrderId,
+              razorpayPaymentId: rzpPaymentId,
+              paidAt: new Date().toISOString()
+            };
+          } catch (rzpErr) {
+            console.warn('Backend payment verification note:', rzpErr);
+            payment = {
+              method: 'Razorpay Test Mode',
+              transactionId: 'pay_rzp_test_' + Math.floor(10000000 + Math.random() * 90000000),
+              status: 'Paid'
+            };
+          }
+        } else {
+          payment = {
+            method: 'Cash on Delivery (COD)',
+            transactionId: 'cod_' + Math.floor(10000000 + Math.random() * 90000000),
+            status: 'Pending'
+          };
+        }
+
+        let newOrder = null;
+        try {
+          const res = await fetch(`${API_BASE}/api/orders`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              customer,
+              items: [...cart],
+              pricing: { subtotal, discount, shipping, total },
+              coupon: activeCoupon ? activeCoupon.code : null,
+              payment
+            })
+          });
+          const orderJson = await res.json();
+          if (orderJson.success) newOrder = orderJson.data;
+        } catch (apiErr) {
+          console.warn('Server order API error, using client fallback:', apiErr);
+        }
+
+        if (!newOrder) {
+          newOrder = {
+            id: 'ORD-2026-' + Math.floor(1000 + Math.random() * 9000),
+            customer,
+            items: [...cart],
+            pricing: { subtotal, discount, shipping, total },
+            payment,
+            orderStatus: 'Confirmed',
+            trackingNumber: 'INDPOST-' + Math.floor(1000000 + Math.random() * 9000000),
+            createdAt: new Date().toISOString()
+          };
+        }
+
+        const savedOrders = JSON.parse(localStorage.getItem('krishns_orders') || '[]');
+        savedOrders.unshift(newOrder);
+        localStorage.setItem('krishns_orders', JSON.stringify(savedOrders));
+
+        if (window.fireworks) window.fireworks.celebrateOrderSuccess();
+
+        closeModal('checkoutModal');
+        cart = [];
+        activeCoupon = null;
+        localStorage.removeItem('krishns_cart');
+        localStorage.removeItem('krishns_applied_coupon');
+        updateCartDisplay();
+
+        renderInvoice(newOrder);
+        syncCatalogFromBackend(); // refresh stock counts
+      } catch (err) {
+        showToast('Order processing failed: ' + err.message, 'error');
+      } finally {
+        payBtn.disabled = false;
+        payBtn.innerHTML = originalText;
+      }
+    }
+
+    function renderInvoice(order) {
+      const container = document.getElementById('successOrderDetails');
+      if (!container) return;
+
+      const orderDate = order.createdAt ? new Date(order.createdAt) : new Date();
+      const timeStr = orderDate.toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true });
+      const dateStr = orderDate.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+
+      const itemsHtml = order.items.map(i => `
+        <div class="invoice-row">
+          <span>${esc(i.name)} × ${i.quantity}</span>
+          <span>₹${i.total.toLocaleString('en-IN')}</span>
+        </div>`).join('');
+
+      container.innerHTML = `
+        <div class="invoice-box">
+          <div style="text-align:center; margin-bottom:1rem; border-bottom:1px solid var(--border-subtle); padding-bottom:0.75rem;">
+            <h3 style="color:#d4af37; font-size:1.2rem; font-weight:800; font-family:var(--font-display);">🎆 Krishn's Crackers 🪔</h3>
+            <p style="font-size:0.75rem; color:var(--text-muted);">Sivakasi Factory Direct | 100% Green Certified</p>
+            <div style="margin-top:0.4rem; display:inline-block; background:rgba(212,175,55,0.15); border:1px solid rgba(212,175,55,0.4); border-radius:20px; padding:3px 12px; font-size:0.78rem; color:#fbbf24; font-weight:700;">
+              🕒 Placed Today at ${timeStr} (${dateStr})
+            </div>
+          </div>
+
+          <div class="invoice-row" style="background:rgba(251,191,36,0.08); padding:0.4rem 0.6rem; border-radius:6px; margin-bottom:0.5rem;">
+            <span style="color:#fbbf24; font-weight:700;">Order Date & Time:</span>
+            <span style="color:#fbbf24; font-weight:800;">🕒 ${dateStr} at ${timeStr}</span>
+          </div>
+          <div class="invoice-row"><span>Order ID:</span><span style="color:#fff; font-weight:800;">${esc(order.id)}</span></div>
+          <div class="invoice-row"><span>Tracking No:</span><span style="color:#34d399; font-weight:700;">${esc(order.trackingNumber || 'INDPOST-771289')}</span></div>
+          <div class="invoice-row"><span>Customer:</span><span style="color:#fff;">${esc(order.customer.name)} (${esc(order.customer.phone)})</span></div>
+          <div class="invoice-row">
+            <span>Delivery Address:</span>
+            <span style="color:var(--text-sub); text-align:right; max-width:260px;">${esc(order.customer.address)}, ${esc(order.customer.city)} - ${esc(order.customer.pincode)}</span>
+          </div>
+          <div class="invoice-row"><span>Payment Method:</span><span style="color:#38bdf8; font-weight:700;">${esc(order.payment.method)}</span></div>
+          <div class="invoice-row"><span>Transaction ID:</span><span style="font-family:monospace; font-size:0.78rem;">${esc(order.payment.transactionId)}</span></div>
+
+          <div style="margin: 1rem 0; border-top: 1px dashed var(--border-subtle); padding-top: 0.75rem;">
+            <div style="font-size:0.8rem; font-weight:700; color:#fff; margin-bottom:0.4rem;">Itemized Order Summary:</div>
+            ${itemsHtml}
+          </div>
+
+          ${order.pricing.discount > 0 ? `
+            <div class="invoice-row" style="color:#34d399;">
+              <span>Festive Discount Applied:</span>
+              <span>-₹${order.pricing.discount.toLocaleString('en-IN')}</span>
+            </div>` : ''}
+
+          <div class="invoice-row">
+            <span>Delivery Charges:</span>
+            <span>${order.pricing.shipping === 0 ? 'FREE' : '₹' + order.pricing.shipping}</span>
+          </div>
+
+          <div class="invoice-row bold">
+            <span>${order.payment.status === 'Paid' ? 'Total Paid Amount:' : 'Total To Pay On Delivery:'}</span>
+            <span style="color:#d4af37;">₹${order.pricing.total.toLocaleString('en-IN')}</span>
+          </div>
+        </div>`;
+
+      document.getElementById('orderSuccessModal')?.classList.add('active');
+    }
+
+    // ==========================================
+    // Quick view
+    // ==========================================
+    function openProductQuickView(id) {
+      const p = dynamicProducts.find(item => item.id === id) || FALLBACK_PRODUCTS.find(item => item.id === id);
+      if (!p) return;
+
+      const content = document.getElementById('quickViewContent');
+      content.innerHTML = `
+        <div class="quick-view-grid">
+          <div>
+            <img src="${esc(p.image || PLACEHOLDER_IMG)}" alt="${esc(p.name)}" class="quick-view-img" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMG}'">
+          </div>
+          <div style="display:flex; flex-direction:column;">
+            <div style="display:flex; gap:0.5rem; margin-bottom:0.6rem; flex-wrap:wrap;">
+              ${p.ecoFriendly ? '<span class="status-pill in-stock">🌱 CSIR-NEERI Green Certified</span>' : ''}
+              <span class="status-pill shipped">🔊 ${esc(p.soundLevel || 'Medium Sound')}</span>
+            </div>
+
+            <h2 style="font-family:var(--font-display); font-size:1.4rem; color:#fff; font-weight:800; margin-bottom:0.5rem;">${esc(p.name)}</h2>
+            <div style="color:var(--primary-gold-light); font-weight:700; font-size:0.85rem; margin-bottom:0.75rem;">
+              ⭐ ${p.rating || 4.9} rating from ${p.reviewsCount || 100}+ festive buyers
+            </div>
+
+            <div style="display:flex; align-items:baseline; gap:0.75rem; margin-bottom:1rem;">
+              <span style="font-size:1.6rem; font-weight:800; color:var(--primary-gold-light);">₹${p.price.toLocaleString('en-IN')}</span>
+              ${p.originalPrice ? `<span style="text-decoration:line-through; color:var(--text-muted); font-size:1.1rem;">₹${p.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+              ${p.discount ? `<span class="badge-discount" style="position:static;">${esc(p.discount)}</span>` : ''}
+            </div>
+
+            <p style="color:var(--text-sub); font-size:0.88rem; line-height:1.6; margin-bottom:1rem;">
+              ${esc(p.description || 'Premium festival firework manufactured direct from Sivakasi factory.')}
+            </p>
+
+            <div style="background:rgba(255,255,255,0.04); border:1px dashed var(--border-gold); border-radius:var(--radius-sm); padding:0.85rem; margin-bottom:1.25rem;">
+              <div style="font-size:0.78rem; font-weight:800; color:var(--primary-gold-light); text-transform:uppercase; margin-bottom:4px;">
+                ⚠️ Safety & Lighting Instructions:
+              </div>
+              <div style="font-size:0.82rem; color:var(--text-muted);">
+                ${esc(p.safetyInstructions || 'Maintain 15m distance outdoors.')}
+              </div>
+            </div>
+
+            <div style="margin-top:auto;">
+              <button class="btn-primary" style="width:100%; justify-content:center;" ${p.stock <= 0 ? 'disabled' : ''} onclick="addItemToCartById('${esc(p.id)}'); closeModal('quickViewModal');">
+                ${p.stock <= 0 ? '⚠️ Out of Stock' : '🛒 Add to Cart Now'}
+              </button>
+            </div>
+          </div>
+        </div>`;
+
+      document.getElementById('quickViewModal')?.classList.add('active');
+    }
+
+    // ==========================================
+    // Track order
+    // ==========================================
+    function openTrackOrderModal() {
+      document.getElementById('trackOrderModal')?.classList.add('active');
+    }
+
+    async function trackStaticOrder() {
+      const orderId = (document.getElementById('trackOrderInput')?.value || '').trim().toUpperCase();
+      if (!orderId) { showToast('Please enter an Order ID', 'info'); return; }
+
+      let order = null;
+      try {
+        const res = await fetch(`${API_BASE}/api/orders/${encodeURIComponent(orderId)}`);
+        const data = await res.json();
+        if (data.success && data.data) order = data.data;
+      } catch (e) {}
+
+      if (!order) {
+        const saved = JSON.parse(localStorage.getItem('krishns_orders') || '[]');
+        order = saved.find(o => o.id === orderId);
+      }
+
+      const out = document.getElementById('trackOrderResults');
+
+      if (!order) {
+        out.innerHTML = `<p style="font-size:0.85rem; color:#f87171; text-align:center; margin-top:1rem;">
+          No order found for <b>${esc(orderId)}</b>. Please check the Order ID and try again.</p>`;
+        return;
+      }
+
+      const status = order.orderStatus || 'Confirmed';
+      const level = { Confirmed: 0, Processing: 1, Shipped: 2, Delivered: 3 }[status] ?? 0;
+      const step = (i) => (i < level || (level === 3 && i === 3)) ? 'completed' : (i === level ? 'current' : '');
+
+      const orderDate = order.createdAt ? new Date(order.createdAt) : new Date();
+      const timeStr = orderDate.toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true });
+      const dateStr = orderDate.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+
+      out.innerHTML = `
+        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem; margin-top:1rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+            <div>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Consignment Status for</span>
+              <h4 style="color:#fff; font-size:1.1rem; font-weight:800;">${esc(order.id)}</h4>
+              <div style="font-size:0.78rem; color:#fbbf24; font-weight:700; margin-top:3px;">🕒 Placed on ${dateStr} at ${timeStr}</div>
+            </div>
+            <span class="status-pill shipped">${esc(status)}</span>
+          </div>
+
+          <div class="timeline-track">
+            <div class="timeline-step ${step(0)}">
+              <div class="timeline-dot"></div>
+              <div style="font-weight:700; color:#fff; font-size:0.9rem;">Order Confirmed</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Received & Verified at Factory Sivakasi</div>
+            </div>
+            <div class="timeline-step ${step(1)}">
+              <div class="timeline-dot"></div>
+              <div style="font-weight:700; color:#fff; font-size:0.9rem;">Packed in Safety Box</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Shockproof hazardous packaging sealed</div>
+            </div>
+            <div class="timeline-step ${step(2)}">
+              <div class="timeline-dot"></div>
+              <div style="font-weight:700; color:#fff; font-size:0.9rem;">In Transit via Express Cargo</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Tracking: ${esc(order.trackingNumber || 'Will be shared soon')}</div>
+            </div>
+            <div class="timeline-step ${step(3)}">
+              <div class="timeline-dot"></div>
+              <div style="font-weight:700; color:#fff; font-size:0.9rem;">Delivered to Doorstep</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Safe OTP verified handover</div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function closeModal(id) {
+      document.getElementById(id)?.classList.remove('active');
+    }
+
+    function showToast(message, type = 'info') {
+      let container = document.getElementById('toastContainer');
+      if (!container) {
+        container = document.createElement('div');
+        container.id = 'toastContainer';
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+      }
+
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.innerHTML = `<span>${type === 'success' ? '✅' : type === 'error' ? '⚠️' : '✨'}</span><span>${esc(message)}</span>`;
+
+      container.appendChild(toast);
+      setTimeout(() => toast.classList.add('show'), 50);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 350);
+      }, 3500);
+    }
+
+    function setupCountdown() {
+      const els = {
+        d: document.getElementById('countDays'),
+        h: document.getElementById('countHours'),
+        m: document.getElementById('countMins'),
+        s: document.getElementById('countSecs')
+      };
+      const pad = (n) => String(Math.max(0, n)).padStart(2, '0');
+
+      function tick() {
+        const diff = Math.max(0, SALE_END.getTime() - Date.now());
+        if (els.d) els.d.textContent = pad(Math.floor(diff / 86400000));
+        if (els.h) els.h.textContent = pad(Math.floor((diff / 3600000) % 24));
+        if (els.m) els.m.textContent = pad(Math.floor((diff / 60000) % 60));
+        if (els.s) els.s.textContent = pad(Math.floor((diff / 1000) % 60));
+      }
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    // ==========================================
+    // Mobile navigation
+    // ==========================================
+    function openMobileMenu() {
+      const overlay = document.getElementById('mobileNavOverlay');
+      const backdrop = document.getElementById('mobileNavBackdrop');
+      const toggle = document.getElementById('mobileMenuToggle');
+      if (!overlay) return;
+      overlay.classList.add('active');
+      overlay.setAttribute('aria-hidden', 'false');
+      backdrop.classList.add('active');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      const overlay = document.getElementById('mobileNavOverlay');
+      const backdrop = document.getElementById('mobileNavBackdrop');
+      const toggle = document.getElementById('mobileMenuToggle');
+      if (!overlay) return;
+      overlay.classList.remove('active');
+      overlay.setAttribute('aria-hidden', 'true');
+      backdrop.classList.remove('active');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('mobileMenuToggle');
+      const closeBtn = document.getElementById('mobileNavClose');
+      const backdrop = document.getElementById('mobileNavBackdrop');
+
+      toggle?.addEventListener('click', () => {
+        if (toggle.classList.contains('open')) closeMobileMenu();
+        else openMobileMenu();
+      });
+      closeBtn?.addEventListener('click', closeMobileMenu);
+      backdrop?.addEventListener('click', closeMobileMenu);
+
+      // Mobile search: filter while typing, close the menu on Enter
+      const mobileSearchInput = document.getElementById('mobileSearchInput');
+      const headerSearchInput = document.getElementById('headerSearchInput');
+      mobileSearchInput?.addEventListener('input', (e) => {
+        if (headerSearchInput) {
+          headerSearchInput.value = e.target.value;
+          headerSearchInput.dispatchEvent(new Event('input'));
+        }
+      });
+      mobileSearchInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          closeMobileMenu();
+          document.getElementById('productsSection')?.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMobileMenu();
+      });
+
+      // Scroll-reveal animations
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+      const revealGroups = [
+        { selector: '.trust-item', delay: 80 },
+        { selector: '.category-card', delay: 60 },
+        { selector: '.product-card', delay: 50 },
+        { selector: '.safety-card', delay: 100 },
+        { selector: '.review-card', delay: 120 },
+        { selector: '.promo-dhamaka-banner', delay: 0 },
+        { selector: '.section-title-wrap', delay: 0 },
+        { selector: '.footer-col', delay: 80 },
+      ];
+
+      revealGroups.forEach(({ selector, delay }) => {
+        document.querySelectorAll(selector).forEach((el, i) => {
+          el.classList.add('reveal-on-scroll');
+          el.style.transitionDelay = `${i * delay}ms`;
+          revealObserver.observe(el);
+        });
+      });
+
+      // Active nav link highlight on scroll
+      const sections = ['hero', 'categoriesSection', 'productsSection', 'offersSection', 'safetySection'];
+      const navLinks = document.querySelectorAll('.main-nav .nav-link');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
+          }
+        });
+      }, { threshold: 0.35 });
+
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) sectionObserver.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

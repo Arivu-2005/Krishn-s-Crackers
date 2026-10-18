@@ -1,0 +1,13 @@
+# Environment variables — NEVER commit this to GitHub!
+.env
+
+# Node modules
+node_modules/
+
+# Database file (local backup, not needed in git)
+data/db.json
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.log
