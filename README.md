@@ -68,6 +68,7 @@ The server connects to a MongoDB Atlas database (`krishns_crackers`) through Mon
 **Search, filter, and sort:** real-time search, category filter pills, price sorting, and stock indicators.
 
 **Slide-over shopping cart:**
+
 - Quantity stepper (+ / −), item removal, instant price calculation.
 - Free-shipping progress meter (threshold: ₹999).
 - Coupon engine: `DIWALI50` (50% off) and `FESTIVE20` (20% off).
@@ -77,29 +78,34 @@ The server connects to a MongoDB Atlas database (`krishns_crackers`) through Mon
 ### 3. Secure Admin Dashboard (`admin.html`)
 
 **Authentication**
+
 - Passwords hashed with `bcryptjs` (10 salt rounds).
 - Stateless JSON Web Tokens (`jsonwebtoken`) signed with `JWT_SECRET`.
 - Protected API routes using Bearer token verification.
 - No passwords or payment secrets exposed in frontend code.
 
 **Metrics and analytics**
+
 - Total revenue (₹), calculated only from verified paid orders in MongoDB.
 - Total orders, active cracker varieties, and pending deliveries.
 - Category distribution progress-bar chart.
 - Recent orders feed.
 
 **Product management (CRUD)**
+
 - Add products with image URL preview, price calculations, and green-cracker toggle.
 - Edit products with pre-filled inputs.
 - Delete products with a confirmation prompt and a guaranteed valid JSON response.
 - One-click In Stock / Out of Stock toggle.
 
 **Order lifecycle management**
+
 - View itemized order details, customer phone number, and delivery slip.
 - Update status: Confirmed ➔ Processing ➔ Shipped ➔ Delivered ➔ Cancelled.
 - Printable delivery slips and invoices.
 
 **Store and gateway settings**
+
 - Manage store name, tagline, customer helpline, support email, free-shipping threshold, and Razorpay Key ID.
 - **Factory Database Reset:** one-click reset of inventory to default seed data in MongoDB (for testing).
 
@@ -199,7 +205,7 @@ RAZORPAY_KEY_SECRET=<your_razorpay_test_key_secret>
 | Customer storefront | `http://localhost:3000/` |
 | Admin portal | `http://localhost:3000/admin.html` |
 
-**Demo admin login** (as configured in the demo environment): use the values of `ADMIN_EMAIL` and `ADMIN_PASSWORD` from your `.env`, then click **Authenticate & Enter Dashboard**.
+**Admin login:** use the values of `ADMIN_EMAIL` and `ADMIN_PASSWORD` from your `.env`, then click **Authenticate & Enter Dashboard**.
 
 ---
 
@@ -208,18 +214,21 @@ RAZORPAY_KEY_SECRET=<your_razorpay_test_key_secret>
 ### Customer Storefront (`http://localhost:3000/`)
 
 **Browse and search**
+
 1. Browse the 16 cracker varieties.
 2. Filter by category (e.g., Sky Shots, Sparklers).
 3. Search in real time.
 4. Click 👁️ **Quick Look** for product details.
 
 **Cart and free shipping**
+
 1. Click 🛒 **Add to Cart** on products.
 2. Open the cart drawer (top right).
 3. Watch the free-shipping progress meter toward ₹999.
 4. Apply coupon `DIWALI50` for a 50% discount.
 
 **Checkout and Razorpay test payment**
+
 1. Click **Proceed to Checkout**.
 2. Fill in delivery details and continue to Payment.
 3. Choose **Razorpay Test Gateway**.
@@ -227,6 +236,7 @@ RAZORPAY_KEY_SECRET=<your_razorpay_test_key_secret>
 5. Enjoy the grand-finale fireworks and print the invoice.
 
 **Order tracking**
+
 1. Click **Track Order** in the navigation.
 2. Enter an Order ID (e.g., `ORD-2026-8841`, or the ID of your placed order).
 3. View live status: Confirmed ➔ Processing ➔ Shipped ➔ Delivered.
@@ -245,11 +255,13 @@ RAZORPAY_KEY_SECRET=<your_razorpay_test_key_secret>
 ## Technical Workflow
 
 ### Admin Authentication
+
 1. Admin submits credentials to `/api/admin/login` (or `/api/auth/login`; both are supported).
 2. Server verifies the bcrypt-hashed password and issues a JWT signed with `JWT_SECRET`.
 3. The frontend sends the token as a Bearer token on protected requests; `middleware/auth.js` validates it.
 
 ### Payment Flow
+
 1. Client requests order creation: `POST /api/payment/create-order` (server creates the Razorpay order payload).
 2. Customer completes payment in the checkout modal (simulated test gateway).
 3. Client submits payment details to `POST /api/payment/verify-payment`.
@@ -379,4 +391,5 @@ The source text did not include the following; add them if applicable:
 - **Full dependency list** (only `bcryptjs`, `jsonwebtoken`, Mongoose, Express, and Node `crypto` are referenced; see `package.json`)
 - **Full API reference** (request/response schemas, and routes for orders, tracking, and dashboard stats)
 - **Image assets:** 8 image files are listed for 16 products; clarify whether other images are hosted elsewhere
-- **Order status update payload:** the text says the backend expected `{ orderStatus }` while the frontend sent `{ status }`; confirm which body fields are accepted 
+- **Order status update payload:** the text says the backend expected `{ orderStatus }` while the frontend sent `{ status }`; confirm which body fields are accepted
+ 
