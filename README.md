@@ -1,6 +1,3 @@
-Credentials in your source text (MongoDB URI with password, JWT secret, Razorpay secret, admin password) are replaced with placeholders so you don't publish them to GitHub. Rotate the MongoDB Atlas password and JWT secret if this text was ever shared or committed.
-
-````markdown
 # Krishn's Crackers 🪔
 
 > **"Celebrate Every Moment!"** — Authentic Factory Direct Sivakasi Green Fireworks
@@ -382,5 +379,4 @@ The source text did not include the following; add them if applicable:
 - **Full dependency list** (only `bcryptjs`, `jsonwebtoken`, Mongoose, Express, and Node `crypto` are referenced; see `package.json`)
 - **Full API reference** (request/response schemas, and routes for orders, tracking, and dashboard stats)
 - **Image assets:** 8 image files are listed for 16 products; clarify whether other images are hosted elsewhere
-- **Order status update payload:** the text says the backend expected `{ orderStatus }` while the frontend sent `{ status }`; confirm which body fields are accepted
-````
+- **Order status update payload:** the text says the backend expected `{ orderStatus }` while the frontend sent `{ status }`; confirm which body fields are accepted 
